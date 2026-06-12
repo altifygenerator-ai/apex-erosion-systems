@@ -1,65 +1,150 @@
-import Image from "next/image";
+// src/app/page.tsx
+
+import Script from "next/script";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import TrustStrip from "@/components/TrustStrip";
+import IntroSection from "@/components/IntroSection";
+import ServicesSection from "@/components/ServicesSection";
+import ProblemSection from "@/components/ProblemSection";
+import ProjectTypes from "@/components/ProjectTypes";
+import GallerySection from "@/components/GallerySection";
+import ProcessSection from "@/components/ProcessSection";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+
+const homePageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://apexerosionsystems.com/#business",
+      name: "Apex Erosion Systems",
+      url: "https://apexerosionsystems.com",
+      telephone: "903-280-6403",
+      image: "https://apexerosionsystems.com/images/apex/gallery-7.jpg",
+      logo: "https://apexerosionsystems.com/images/apex/apex-logo.png",
+      description:
+        "Apex Erosion Systems provides commercial and residential drainage, grading, erosion control, soil prep, hydroseeding, seeding, and sod work.",
+      priceRange: "$$",
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+      knowsAbout: [
+        "Drainage solutions",
+        "Site grading",
+        "Erosion control",
+        "Hydroseeding",
+        "Soil stabilization",
+        "Sod installation",
+        "Seeding",
+        "New construction site finish work",
+        "Washout repair",
+      ],
+      makesOffer: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Drainage Solutions",
+            description:
+              "Water control for commercial sites, new construction, and problem areas where runoff, standing water, or poor drainage can create bigger issues.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Precision Grading & Site Shaping",
+            description:
+              "Grading and shaping that helps prepare sites for drainage, erosion control, hydroseeding, sod, or a cleaner finished surface.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Erosion Control",
+            description:
+              "Soil stabilization for bare ground, slopes, washout areas, construction sites, and areas where water keeps moving dirt.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Hydroseeding",
+            description:
+              "Hydroseeding for commercial properties, new builds, repaired areas, and open soil that needs coverage started quickly.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Sod & Seeding",
+            description:
+              "Seed, sod, and soil prep options for projects that need a finished lawn or stabilized surface.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://apexerosionsystems.com/#website",
+      url: "https://apexerosionsystems.com",
+      name: "Apex Erosion Systems",
+      publisher: {
+        "@id": "https://apexerosionsystems.com/#business",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://apexerosionsystems.com/#webpage",
+      url: "https://apexerosionsystems.com",
+      name: "Apex Erosion Systems | Drainage, Grading, Erosion Control & Hydroseeding",
+      description:
+        "Apex Erosion Systems provides commercial and residential drainage, grading, erosion control, soil prep, hydroseeding, seeding, and sod work.",
+      isPartOf: {
+        "@id": "https://apexerosionsystems.com/#website",
+      },
+      about: {
+        "@id": "https://apexerosionsystems.com/#business",
+      },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: "https://apexerosionsystems.com/images/apex/gallery-7.jpg",
+      },
+    },
+  ],
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <Script
+        id="home-page-schema"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homePageSchema),
+        }}
+      />
+
+      <Header />
+      <main>
+        <Hero />
+        <TrustStrip />
+        <IntroSection />
+        <ServicesSection />
+        <ProblemSection />
+        <ProjectTypes />
+        <GallerySection />
+        <ProcessSection />
+        <FinalCTA />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
