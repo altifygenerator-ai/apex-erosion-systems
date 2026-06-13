@@ -6,22 +6,22 @@ export const siteData: SiteData = {
   name: "Apex Erosion Systems",
   phone: "903-280-6403",
   phoneHref: "tel:9032806403",
-  tagline: "Drainage. Grading. Erosion Control. Hydroseeding.",
+  tagline: "Hydroseeding. Erosion Control. Drainage. Site Stabilization.",
   logo: "/images/apex/logo.png",
 
   nav: [
-    { label: "Services", href: "#services" },
-    { label: "Problems We Fix", href: "#problems" },
-    
-    { label: "Process", href: "#process" },
+    { label: "Services", href: "/#services" },
+    { label: "Problems We Fix", href: "/#problems" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Process", href: "/#process" },
   ],
 
   hero: {
-    eyebrow: "Commercial site finish work starts with the ground.",
+    eyebrow: "Commercial site finish work starts with stabilization.",
     headline:
-      "Drainage, grading, erosion control, and hydroseeding for commercial and residential projects.",
+      "Hydroseeding, erosion control, drainage, and site stabilization for commercial and residential projects.",
     text:
-      "Apex Erosion Systems helps builders, contractors, developers, and property owners control water, stabilize soil, shape rough ground, and finish sites with hydroseeding, sod, or seeding.",
+      "Apex Erosion Systems helps builders, contractors, developers, and property owners stabilize exposed soil, control runoff, handle drainage concerns, and finish sites with hydroseeding, seeding, sod, and light grading when needed.",
     primaryCta: "Call 903-280-6403",
     secondaryCta: "View Services",
     image: "/images/apex/gallery-17.jpg",
@@ -30,7 +30,7 @@ export const siteData: SiteData = {
   quote: {
     title: "Tell us what the site needs.",
     text:
-      "Whether it is a commercial build, new construction site, drainage issue, washout, bare soil, or final lawn finish, Apex can look at the ground first and help plan the right next step.",
+      "Whether it is a commercial build, new construction site, drainage issue, washout, bare soil, or final lawn finish, Apex can look at the ground first and help plan the right stabilization or finish option.",
     button: "Request a Quote",
     fields: [
       {
@@ -51,12 +51,13 @@ export const siteData: SiteData = {
         type: "select",
         placeholder: "Choose a project type",
         options: [
-          "Drainage problem",
-          "Yard grading",
           "Hydroseeding",
-          "Sod or seeding",
           "Erosion control",
+          "Drainage problem",
+          "Site stabilization",
+          "Sod or seeding",
           "New construction lawn",
+          "Light grading or site shaping",
           "Damaged yard repair",
         ],
       },
@@ -64,24 +65,25 @@ export const siteData: SiteData = {
         label: "Project details",
         name: "details",
         type: "textarea",
-        placeholder: "Commercial site, new build, drainage issue, washout, bare soil, grading, or what needs finished",
+        placeholder:
+          "Commercial site, new build, drainage issue, washout, bare soil, hydroseeding, erosion control, or what needs finished",
       },
     ],
   },
 
   trust: [
     "Commercial Ready",
-    "Precision Grading",
-    "Erosion Control",
     "Hydroseeding",
-    "New Construction",
+    "Erosion Control",
+    "Drainage Support",
+    "Site Stabilization",
   ],
 
   intro: {
     eyebrow: "More than seed on dirt",
     title: "A finished site starts before the seed goes down.",
     text:
-      "Most companies can spray seed and leave. Apex Erosion Systems takes a more complete approach. Before the finish work happens, the focus is on what matters most: drainage, grading, soil prep, and erosion control.",
+      "Most companies can spray seed and leave. Apex Erosion Systems takes a more complete approach. Before the finish work happens, the focus is on what matters most: drainage, soil stabilization, erosion control, prep work, and the right finish for the site.",
     points: [
       "Commercial site stabilization",
       "New construction finish work",
@@ -92,14 +94,9 @@ export const siteData: SiteData = {
 
   services: [
     {
-      title: "Drainage Solutions",
+      title: "Hydroseeding",
       text:
-        "Water control for commercial sites, new construction, and problem areas where runoff, standing water, or poor drainage can create bigger issues.",
-    },
-    {
-      title: "Precision Grading & Site Shaping",
-      text:
-        "Grading and shaping that helps prepare the site for drainage, erosion control, hydroseeding, sod, or a cleaner finished surface.",
+        "A strong finish option for commercial properties, new builds, repaired areas, slopes, and open soil that needs coverage started quickly.",
     },
     {
       title: "Erosion Control",
@@ -107,9 +104,14 @@ export const siteData: SiteData = {
         "Soil stabilization for bare ground, slopes, washout areas, construction sites, and spaces where water keeps moving dirt.",
     },
     {
-      title: "Hydroseeding",
+      title: "Drainage Solutions",
       text:
-        "A strong finish option for commercial properties, new builds, repaired areas, and open soil that needs coverage started quickly.",
+        "Water control support for commercial sites, new construction, and problem areas where runoff, standing water, or poor drainage can create bigger issues.",
+    },
+    {
+      title: "Site Stabilization",
+      text:
+        "Stabilization for exposed soil, open ground, slopes, drainage paths, and construction areas that need to hold up better after the work is done.",
     },
     {
       title: "Sod & Seeding",
@@ -122,14 +124,14 @@ export const siteData: SiteData = {
         "Exterior finish work for builders, contractors, and property owners after the main construction work is complete.",
     },
     {
-      title: "Foundation & Water Control",
+      title: "Light Grading & Site Shaping",
       text:
-        "Grading and drainage work around structures to help move water away from areas where it should not sit.",
+        "Light grading and shaping when needed to help prepare the ground for drainage, erosion control, hydroseeding, sod, or a cleaner finished surface.",
     },
     {
       title: "Washout & Site Repair",
       text:
-        "Repair support for sites damaged by runoff, standing water, washouts, poor grading, or unfinished dirt work.",
+        "Repair support for sites damaged by runoff, standing water, washouts, exposed soil, or unfinished dirt work.",
     },
   ],
 
@@ -137,7 +139,7 @@ export const siteData: SiteData = {
     eyebrow: "Water problems slow projects down",
     title: "Fix drainage, washouts, and bare soil before they become bigger problems.",
     text:
-      "Standing water, washouts, and poor drainage can damage finished work, move soil, create erosion, and leave a commercial or residential project looking incomplete. Apex focuses on correcting the ground before finishing it with seed, sod, or hydroseeding.",
+      "Standing water, washouts, and poor drainage can damage finished work, move soil, create erosion, and leave a commercial or residential project looking incomplete. Apex focuses on stabilizing the ground before finishing it with seed, sod, or hydroseeding.",
     items: [
       "Standing water",
       "Washouts",
@@ -152,7 +154,7 @@ export const siteData: SiteData = {
     {
       title: "Commercial properties",
       text:
-        "For business sites, open ground, and finished properties that need drainage, grading, erosion control, or hydroseeding.",
+        "For business sites, open ground, and finished properties that need hydroseeding, erosion control, drainage support, or soil stabilization.",
     },
     {
       title: "Construction site finish work",
@@ -162,7 +164,7 @@ export const siteData: SiteData = {
     {
       title: "New home developments",
       text:
-        "For new builds and development areas where the ground still needs shaped, stabilized, seeded, or finished.",
+        "For new builds and development areas where the ground needs stabilized, seeded, protected from erosion, or finished cleanly.",
     },
     {
       title: "Poor drainage areas",
@@ -172,179 +174,180 @@ export const siteData: SiteData = {
     {
       title: "Bare lots and open soil",
       text:
-        "For exposed ground that needs grading, erosion control, hydroseeding, seed, or sod to help stabilize the area.",
+        "For exposed ground that needs erosion control, hydroseeding, seed, sod, or light shaping to help stabilize the area.",
     },
     {
       title: "Residential yard repairs",
       text:
-        "For homeowners dealing with washouts, poor grading, bare soil, drainage problems, or yards that need finished.",
+        "For homeowners dealing with washouts, bare soil, drainage problems, erosion issues, or yards that need finished.",
     },
   ],
 
-gallery: [
-  {
-    src: "/images/apex/gallery-1.jpg",
-    alt: "Hydroseeding and soil stabilization around a commercial building site",
-    label: "Commercial Hydroseeding",
-  },
-  {
-    src: "/images/apex/gallery-2.jpg",
-    alt: "Fresh grading and soil preparation around a new construction property",
-    label: "Site Grading & Prep",
-  },
-  {
-    src: "/images/apex/gallery-3.jpg",
-    alt: "Drainage and erosion control work beside a new construction home",
-    label: "Drainage & Erosion Control",
-  },
-  {
-    src: "/images/apex/gallery-4.jpg",
-    alt: "Dust control and soil stabilization work near a residential construction site",
-    label: "Soil Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-5.jpg",
-    alt: "Finished hydroseeding around a newly built home",
-    label: "New Build Lawn Finish",
-  },
-  {
-    src: "/images/apex/gallery-6.jpg",
-    alt: "Hydroseeding and lawn establishment around a pool and patio project",
-    label: "Pool Area Hydroseeding",
-  },
-  {
-    src: "/images/apex/gallery-7.jpg",
-    alt: "Freshly graded dirt road and construction site access area",
-    label: "Access Road Grading",
-  },
-  {
-    src: "/images/apex/gallery-8.jpg",
-    alt: "Prepared soil rows and erosion control work on a larger open property",
-    label: "Large Site Prep",
-  },
-  {
-    src: "/images/apex/gallery-9.jpg",
-    alt: "Graded drainage path and bare soil preparation beside a structure",
-    label: "Drainage Path Prep",
-  },
-  {
-    src: "/images/apex/gallery-10.jpg",
-    alt: "Bright hydroseed application in a drainage ditch and erosion control area",
-    label: "Ditch Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-11.jpg",
-    alt: "Hydroseeded open lot with soil stabilization across a wide property",
-    label: "Open Lot Hydroseeding",
-  },
-  {
-    src: "/images/apex/gallery-12.jpg",
-    alt: "Equipment grading and shaping soil for drainage and site preparation",
-    label: "Equipment Grading",
-  },
-  {
-    src: "/images/apex/gallery-13.jpg",
-    alt: "Hydroseeding application along a graded property edge",
-    label: "Edge Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-14.jpg",
-    alt: "Finished lawn and sidewalk area after seeding or sod establishment",
-    label: "Finished Lawn Area",
-  },
-  {
-    src: "/images/apex/gallery-15.jpg",
-    alt: "Hydroseeded lawn area around a new residential build",
-    label: "Residential Hydroseeding",
-  },
-  {
-    src: "/images/apex/gallery-16.jpg",
-    alt: "Hydroseeding application in a wooded drainage and erosion control area",
-    label: "Wooded Drainage Control",
-  },
-  {
-    src: "/images/apex/gallery-17.jpg",
-    alt: "Hydroseeding across a large open field with a treeline in the background",
-    label: "Field Hydroseeding",
-  },
-  {
-    src: "/images/apex/gallery-18.jpg",
-    alt: "Hydroseeded open ground and bare soil stabilization near a lake or pond edge",
-    label: "Open Ground Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-19.jpg",
-    alt: "Hydroseeding along a sloped edge beside open property",
-    label: "Slope Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-20.jpg",
-    alt: "New construction property with finished soil preparation and erosion control work",
-    label: "Construction Site Finish",
-  },
-  {
-    src: "/images/apex/gallery-21.jpg",
-    alt: "Fresh dirt work and soil shaping around a new construction building",
-    label: "Fresh Dirt Work",
-  },
-  {
-    src: "/images/apex/gallery-22.jpg",
-    alt: "Rough graded open lot around a building site before final stabilization",
-    label: "Lot Grading",
-  },
-  {
-    src: "/images/apex/gallery-23.jpg",
-    alt: "Hydroseeding and erosion control work along a roadside or driveway edge",
-    label: "Roadside Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-24.jpg",
-    alt: "Hydroseeding equipment applying seed mixture across a large property",
-    label: "Hydroseeding Application",
-  },
-  {
-    src: "/images/apex/gallery-25.jpg",
-    alt: "Drainage channels and hydroseeding work across a large open site",
-    label: "Drainage Channel Work",
-  },
-  {
-    src: "/images/apex/gallery-26.jpg",
-    alt: "Freshly graded red dirt and soil preparation before hydroseeding",
-    label: "Red Dirt Grading",
-  },
-  {
-    src: "/images/apex/gallery-27.jpg",
-    alt: "Hydroseeded open property with exposed soil and stabilization work",
-    label: "Property Stabilization",
-  },
-  {
-    src: "/images/apex/gallery-28.jpg",
-    alt: "Hydroseeding and soil stabilization around a cabin or new build",
-    label: "Cabin Site Finish",
-  },
-  {
-    src: "/images/apex/gallery-29.jpg",
-    alt: "Hydroseeded lawn area around a light-colored residential building",
-    label: "Residential Site Finish",
-  },
-  {
-    src: "/images/apex/gallery-30.jpg",
-    alt: "Hydroseeding and erosion control work across a wooded property edge",
-    label: "Woodline Stabilization",
-  },
-],
+  gallery: [
+    {
+      src: "/images/apex/gallery-1.jpg",
+      alt: "Hydroseeding and soil stabilization around a commercial building site",
+      label: "Commercial Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-2.jpg",
+      alt: "Fresh soil preparation around a new construction property",
+      label: "Site Prep",
+    },
+    {
+      src: "/images/apex/gallery-3.jpg",
+      alt: "Drainage and erosion control work beside a new construction home",
+      label: "Drainage & Erosion Control",
+    },
+    {
+      src: "/images/apex/gallery-4.jpg",
+      alt: "Dust control and soil stabilization work near a residential construction site",
+      label: "Soil Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-5.jpg",
+      alt: "Finished hydroseeding around a newly built home",
+      label: "New Build Lawn Finish",
+    },
+    {
+      src: "/images/apex/gallery-6.jpg",
+      alt: "Hydroseeding and lawn establishment around a pool and patio project",
+      label: "Pool Area Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-7.jpg",
+      alt: "Prepared dirt road and construction site access area",
+      label: "Site Access Prep",
+    },
+    {
+      src: "/images/apex/gallery-8.jpg",
+      alt: "Prepared soil rows and erosion control work on a larger open property",
+      label: "Large Site Prep",
+    },
+    {
+      src: "/images/apex/gallery-9.jpg",
+      alt: "Drainage path and bare soil preparation beside a structure",
+      label: "Drainage Path Prep",
+    },
+    {
+      src: "/images/apex/gallery-10.jpg",
+      alt: "Bright hydroseed application in a drainage ditch and erosion control area",
+      label: "Ditch Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-11.jpg",
+      alt: "Hydroseeded open lot with soil stabilization across a wide property",
+      label: "Open Lot Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-12.jpg",
+      alt: "Equipment shaping soil for drainage and site preparation",
+      label: "Equipment Site Prep",
+    },
+    {
+      src: "/images/apex/gallery-13.jpg",
+      alt: "Hydroseeding application along a prepared property edge",
+      label: "Edge Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-14.jpg",
+      alt: "Finished lawn and sidewalk area after seeding or sod establishment",
+      label: "Finished Lawn Area",
+    },
+    {
+      src: "/images/apex/gallery-15.jpg",
+      alt: "Hydroseeded lawn area around a new residential build",
+      label: "Residential Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-16.jpg",
+      alt: "Hydroseeding application in a wooded drainage and erosion control area",
+      label: "Wooded Drainage Control",
+    },
+    {
+      src: "/images/apex/gallery-17.jpg",
+      alt: "Hydroseeding across a large open field with a treeline in the background",
+      label: "Field Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-18.jpg",
+      alt: "Hydroseeded open ground and bare soil stabilization near a lake or pond edge",
+      label: "Open Ground Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-19.jpg",
+      alt: "Hydroseeding along a sloped edge beside open property",
+      label: "Slope Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-20.jpg",
+      alt: "New construction property with finished soil preparation and erosion control work",
+      label: "Construction Site Finish",
+    },
+    {
+      src: "/images/apex/gallery-21.jpg",
+      alt: "Fresh dirt work and soil preparation around a new construction building",
+      label: "Fresh Dirt Work",
+    },
+    {
+      src: "/images/apex/gallery-22.jpg",
+      alt: "Prepared open lot around a building site before final stabilization",
+      label: "Open Lot Prep",
+    },
+    {
+      src: "/images/apex/gallery-23.jpg",
+      alt: "Hydroseeding and erosion control work along a roadside or driveway edge",
+      label: "Roadside Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-24.jpg",
+      alt: "Hydroseeding equipment applying seed mixture across a large property",
+      label: "Hydroseeding Application",
+    },
+    {
+      src: "/images/apex/gallery-25.jpg",
+      alt: "Drainage channels and hydroseeding work across a large open site",
+      label: "Drainage Channel Work",
+    },
+    {
+      src: "/images/apex/gallery-26.jpg",
+      alt: "Fresh red dirt and soil preparation before hydroseeding",
+      label: "Red Dirt Site Prep",
+    },
+    {
+      src: "/images/apex/gallery-27.jpg",
+      alt: "Hydroseeded open property with exposed soil and stabilization work",
+      label: "Property Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-28.jpg",
+      alt: "Hydroseeding and soil stabilization around a cabin or new build",
+      label: "Cabin Site Finish",
+    },
+    {
+      src: "/images/apex/gallery-29.jpg",
+      alt: "Hydroseeded lawn area around a light-colored residential building",
+      label: "Residential Site Finish",
+    },
+    {
+      src: "/images/apex/gallery-30.jpg",
+      alt: "Hydroseeding and erosion control work across a wooded property edge",
+      label: "Woodline Stabilization",
+    },
+  ],
+
   process: [
     {
       step: "01",
       title: "Walk the site and check the problem areas",
       text:
-        "The first step is looking at how water moves, where soil is exposed, where the grade needs corrected, and what the finished site needs to accomplish.",
+        "The first step is looking at how water moves, where soil is exposed, where erosion is happening, and what the finished site needs to accomplish.",
     },
     {
       step: "02",
-      title: "Shape the ground and prep the soil",
+      title: "Prep the ground for stabilization",
       text:
-        "Grading and soil prep help create a better base before erosion control, hydroseeding, sod, or seeding begins.",
+        "Soil prep, light shaping, and site preparation help create a better base before erosion control, hydroseeding, sod, or seeding begins.",
     },
     {
       step: "03",
@@ -362,8 +365,8 @@ gallery: [
 
   finalCta: {
     eyebrow: "Get the site finished right",
-    title: "Need drainage, grading, erosion control, or hydroseeding handled?",
+    title: "Need hydroseeding, erosion control, drainage, or site stabilization handled?",
     text:
-      "Call Apex Erosion Systems for commercial site work, new construction finish work, drainage solutions, erosion control, hydroseeding, sod, and soil prep.",
+      "Call Apex Erosion Systems for commercial site work, new construction finish work, drainage support, erosion control, hydroseeding, sod, seeding, and soil stabilization.",
   },
 };

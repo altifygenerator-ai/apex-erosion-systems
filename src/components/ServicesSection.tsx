@@ -9,13 +9,12 @@ export default function ServicesSection() {
       <div className="section-shell">
         <Reveal className="section-heading">
           <p className="eyebrow">Services</p>
-          <h2>Commercial site stabilization, drainage, grading, and hydroseeding handled as one complete job.</h2>
+          <h2>Hydroseeding, erosion control, drainage, and site stabilization handled with the ground in mind.</h2>
           <p>
-            Apex Erosion Systems helps commercial properties, builders, contractors,
-            and new construction projects get the ground ready before the final
-            finish. From moving water the right way and shaping the site to controlling
-            erosion, prepping soil, and finishing with hydroseeding, sod, or seed,
-            the work is built around a cleaner, more stable finished property.
+            Apex Erosion Systems helps commercial properties, builders,
+            contractors, and new construction projects stabilize exposed soil,
+            control runoff, reduce erosion, and finish sites with hydroseeding,
+            sod, seeding, and light grading when the job calls for it.
           </p>
         </Reveal>
 

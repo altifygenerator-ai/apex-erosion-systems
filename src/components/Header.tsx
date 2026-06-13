@@ -30,7 +30,7 @@ export default function Header() {
             {item.label}
           </a>
         ))}
-        <a href="/gallery">Gallery</a>
+       
       </nav>
 
       <a className="header-phone" href={siteData.phoneHref}>
