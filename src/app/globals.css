@@ -199,8 +199,6 @@ p {
 
 /* Header */
 
-/* Header */
-
 .site-header {
   position: fixed;
   top: 16px;
@@ -234,6 +232,7 @@ p {
   display: grid;
   width: 54px;
   height: 54px;
+  flex: 0 0 auto;
   overflow: hidden;
   place-items: center;
   border: 1px solid var(--line);
@@ -260,6 +259,10 @@ p {
   letter-spacing: -0.04em;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.brand-name-short {
+  display: none;
 }
 
 .brand-tagline {
@@ -316,6 +319,10 @@ p {
   height: 2px;
   border-radius: 999px;
   background: var(--text);
+}
+
+.mobile-menu-phone {
+  display: none;
 }
 /* Hero */
 
@@ -1574,7 +1581,7 @@ p {
   }
 
   .main-nav.mobile-open {
-    max-height: 360px;
+    max-height: 420px;
     padding: 12px;
     border-color: rgba(245, 241, 232, 0.14);
     opacity: 1;
@@ -1585,6 +1592,13 @@ p {
     padding: 13px 14px;
     border: 1px solid rgba(245, 241, 232, 0.08);
     background: rgba(255, 255, 255, 0.045);
+  }
+
+  .mobile-menu-phone {
+    display: block;
+    background: var(--cream) !important;
+    color: var(--text-dark) !important;
+    font-weight: 950;
   }
 }
 

@@ -27,7 +27,8 @@ export default function Header() {
         </span>
 
         <span className="brand-copy">
-          <span className="brand-name">{siteData.name}</span>
+          <span className="brand-name brand-name-full">{siteData.name}</span>
+          <span className="brand-name brand-name-short">Apex</span>
           <span className="brand-tagline">{siteData.tagline}</span>
         </span>
       </a>
@@ -45,6 +46,10 @@ export default function Header() {
             {item.label}
           </a>
         ))}
+
+        <a className="mobile-menu-phone" href={siteData.phoneHref} onClick={closeMenu}>
+          Call {siteData.phone}
+        </a>
       </nav>
 
       <a className="header-phone" href={siteData.phoneHref}>
