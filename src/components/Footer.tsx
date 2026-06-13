@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 
+import Image from "next/image";
 import { siteData } from "@/data/site";
 
 export default function Footer() {
@@ -7,8 +8,19 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="section-shell footer-inner">
         <div className="footer-brand">
-          <h2>{siteData.name}</h2>
-          <p>{siteData.tagline}</p>
+          <span className="footer-logo">
+            <Image
+              src={siteData.logo}
+              alt="Apex Erosion Systems logo"
+              width={90}
+              height={90}
+            />
+          </span>
+
+          <div>
+            <h2>{siteData.name}</h2>
+            <p>{siteData.tagline}</p>
+          </div>
         </div>
 
         <div className="footer-links">
