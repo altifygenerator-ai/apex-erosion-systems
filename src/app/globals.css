@@ -1708,3 +1708,16 @@ p {
     animation: none !important;
   }
 }
+@media (max-width: 1120px) {
+  .site-header {
+    grid-template-columns: 1fr auto !important;
+  }
+
+  .header-phone {
+    display: none !important;
+  }
+
+  .mobile-menu-phone {
+    display: block !important;
+  }
+}
