@@ -43,11 +43,12 @@ export default function GallerySection() {
       <div className="section-shell">
         <Reveal className="section-heading">
           <p className="eyebrow">Project proof</p>
-          <h2>Commercial site work, grading, erosion control, and hydroseeding you can actually see.</h2>
+          <h2>Hydroseeding, erosion control, drainage, and site stabilization you can actually see.</h2>
           <p>
             From new construction sites and exposed soil to drainage problems,
-            grading, erosion control, and hydroseeding, these photos show the
-            kind of groundwork Apex handles before a property is fully finished.
+            washouts, erosion control, and hydroseeding, these photos show the
+            kind of stabilization and finish work Apex handles before a property
+            is fully complete.
           </p>
         </Reveal>
 
