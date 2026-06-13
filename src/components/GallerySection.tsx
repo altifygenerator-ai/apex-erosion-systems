@@ -8,10 +8,11 @@ import { siteData } from "@/data/site";
 import Reveal from "@/components/Reveal";
 
 export default function GallerySection() {
+  const homeGallery = siteData.gallery.slice(0, 8);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const selectedImage =
-    selectedIndex !== null ? siteData.gallery[selectedIndex] : null;
+    selectedIndex !== null ? homeGallery[selectedIndex] : null;
 
   const openGallery = (index: number) => {
     setSelectedIndex(index);
@@ -25,7 +26,7 @@ export default function GallerySection() {
     if (selectedIndex === null) return;
 
     setSelectedIndex(
-      selectedIndex === 0 ? siteData.gallery.length - 1 : selectedIndex - 1
+      selectedIndex === 0 ? homeGallery.length - 1 : selectedIndex - 1
     );
   };
 
@@ -33,7 +34,7 @@ export default function GallerySection() {
     if (selectedIndex === null) return;
 
     setSelectedIndex(
-      selectedIndex === siteData.gallery.length - 1 ? 0 : selectedIndex + 1
+      selectedIndex === homeGallery.length - 1 ? 0 : selectedIndex + 1
     );
   };
 
@@ -51,27 +52,27 @@ export default function GallerySection() {
         </Reveal>
 
         <div className="gallery-grid">
-          {siteData.gallery[0] && (
+          {homeGallery[0] && (
             <Reveal className="gallery-feature">
               <button
                 type="button"
                 className="gallery-button"
                 onClick={() => openGallery(0)}
-                aria-label={`Open ${siteData.gallery[0].label}`}
+                aria-label={`Open ${homeGallery[0].label}`}
               >
                 <Image
-                  src={siteData.gallery[0].src}
-                  alt={siteData.gallery[0].alt}
+                  src={homeGallery[0].src}
+                  alt={homeGallery[0].alt}
                   fill
                   sizes="(max-width: 900px) 100vw, 60vw"
                 />
-                <div className="gallery-label">{siteData.gallery[0].label}</div>
+                <div className="gallery-label">{homeGallery[0].label}</div>
               </button>
             </Reveal>
           )}
 
           <div className="gallery-thumbs">
-            {siteData.gallery.slice(1, 4).map((image, index) => {
+            {homeGallery.slice(1, 4).map((image, index) => {
               const imageIndex = index + 1;
 
               return (
@@ -96,9 +97,9 @@ export default function GallerySection() {
           </div>
         </div>
 
-        {siteData.gallery.length > 4 && (
+        {homeGallery.length > 4 && (
           <div className="gallery-expanded-grid">
-            {siteData.gallery.slice(4).map((image, index) => {
+            {homeGallery.slice(4).map((image, index) => {
               const imageIndex = index + 4;
 
               return (
@@ -120,6 +121,14 @@ export default function GallerySection() {
                 </Reveal>
               );
             })}
+          </div>
+        )}
+
+        {siteData.gallery.length > 8 && (
+          <div className="gallery-page-link-wrap">
+            <a className="button button-secondary" href="/gallery">
+              View Full Gallery
+            </a>
           </div>
         )}
       </div>

@@ -6,7 +6,7 @@ import { siteData } from "@/data/site";
 export default function Header() {
   return (
     <header className="site-header">
-      <a href="#top" className="brand-link" aria-label={siteData.name}>
+      <a href="/" className="brand-link" aria-label={siteData.name}>
         <span className="brand-logo">
           <Image
             src={siteData.logo}
@@ -24,11 +24,13 @@ export default function Header() {
       </a>
 
       <nav className="main-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
         {siteData.nav.map((item) => (
           <a key={item.href} href={item.href}>
             {item.label}
           </a>
         ))}
+        <a href="/gallery">Gallery</a>
       </nav>
 
       <a className="header-phone" href={siteData.phoneHref}>

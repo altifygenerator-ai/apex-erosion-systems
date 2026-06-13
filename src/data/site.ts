@@ -12,7 +12,7 @@ export const siteData: SiteData = {
   nav: [
     { label: "Services", href: "#services" },
     { label: "Problems We Fix", href: "#problems" },
-    { label: "Gallery", href: "#gallery" },
+    
     { label: "Process", href: "#process" },
   ],
 
@@ -24,7 +24,7 @@ export const siteData: SiteData = {
       "Apex Erosion Systems helps builders, contractors, developers, and property owners control water, stabilize soil, shape rough ground, and finish sites with hydroseeding, sod, or seeding.",
     primaryCta: "Call 903-280-6403",
     secondaryCta: "View Services",
-    image: "/images/apex/gallery-2.jpg",
+    image: "/images/apex/gallery-17.jpg",
   },
 
   quote: {
@@ -261,6 +261,76 @@ gallery: [
     src: "/images/apex/gallery-16.jpg",
     alt: "Hydroseeding application in a wooded drainage and erosion control area",
     label: "Wooded Drainage Control",
+  },
+  {
+    src: "/images/apex/gallery-17.jpg",
+    alt: "Hydroseeding across a large open field with a treeline in the background",
+    label: "Field Hydroseeding",
+  },
+  {
+    src: "/images/apex/gallery-18.jpg",
+    alt: "Hydroseeded open ground and bare soil stabilization near a lake or pond edge",
+    label: "Open Ground Stabilization",
+  },
+  {
+    src: "/images/apex/gallery-19.jpg",
+    alt: "Hydroseeding along a sloped edge beside open property",
+    label: "Slope Stabilization",
+  },
+  {
+    src: "/images/apex/gallery-20.jpg",
+    alt: "New construction property with finished soil preparation and erosion control work",
+    label: "Construction Site Finish",
+  },
+  {
+    src: "/images/apex/gallery-21.jpg",
+    alt: "Fresh dirt work and soil shaping around a new construction building",
+    label: "Fresh Dirt Work",
+  },
+  {
+    src: "/images/apex/gallery-22.jpg",
+    alt: "Rough graded open lot around a building site before final stabilization",
+    label: "Lot Grading",
+  },
+  {
+    src: "/images/apex/gallery-23.jpg",
+    alt: "Hydroseeding and erosion control work along a roadside or driveway edge",
+    label: "Roadside Stabilization",
+  },
+  {
+    src: "/images/apex/gallery-24.jpg",
+    alt: "Hydroseeding equipment applying seed mixture across a large property",
+    label: "Hydroseeding Application",
+  },
+  {
+    src: "/images/apex/gallery-25.jpg",
+    alt: "Drainage channels and hydroseeding work across a large open site",
+    label: "Drainage Channel Work",
+  },
+  {
+    src: "/images/apex/gallery-26.jpg",
+    alt: "Freshly graded red dirt and soil preparation before hydroseeding",
+    label: "Red Dirt Grading",
+  },
+  {
+    src: "/images/apex/gallery-27.jpg",
+    alt: "Hydroseeded open property with exposed soil and stabilization work",
+    label: "Property Stabilization",
+  },
+  {
+    src: "/images/apex/gallery-28.jpg",
+    alt: "Hydroseeding and soil stabilization around a cabin or new build",
+    label: "Cabin Site Finish",
+  },
+  {
+    src: "/images/apex/gallery-29.jpg",
+    alt: "Hydroseeded lawn area around a light-colored residential building",
+    label: "Residential Site Finish",
+  },
+  {
+    src: "/images/apex/gallery-30.jpg",
+    alt: "Hydroseeding and erosion control work across a wooded property edge",
+    label: "Woodline Stabilization",
   },
 ],
   process: [

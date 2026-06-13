@@ -12,6 +12,7 @@ import GallerySection from "@/components/GallerySection";
 import ProcessSection from "@/components/ProcessSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import ImageBreak from "@/components/ImageBreak";
 
 const homePageSchema = {
   "@context": "https://schema.org",
@@ -138,8 +139,10 @@ export default function Home() {
         <TrustStrip />
         <IntroSection />
         <ServicesSection />
-        <ProblemSection />
+
+<ProblemSection />
         <ProjectTypes />
+        <ImageBreak />
         <GallerySection />
         <ProcessSection />
         <FinalCTA />
