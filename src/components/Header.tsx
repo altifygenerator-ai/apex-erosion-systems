@@ -1,12 +1,21 @@
 // src/components/Header.tsx
 
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { siteData } from "@/data/site";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="site-header">
-      <a href="/" className="brand-link" aria-label={siteData.name}>
+      <a href="/" className="brand-link" aria-label={siteData.name} onClick={closeMenu}>
         <span className="brand-logo">
           <Image
             src={siteData.logo}
@@ -23,19 +32,36 @@ export default function Header() {
         </span>
       </a>
 
-      <nav className="main-nav" aria-label="Main navigation">
-        <a href="/">Home</a>
+      <nav
+        className={menuOpen ? "main-nav mobile-open" : "main-nav"}
+        aria-label="Main navigation"
+      >
+        <a href="/" onClick={closeMenu}>
+          Home
+        </a>
+
         {siteData.nav.map((item) => (
-          <a key={item.href} href={item.href}>
+          <a key={item.href} href={item.href} onClick={closeMenu}>
             {item.label}
           </a>
         ))}
-       
       </nav>
 
       <a className="header-phone" href={siteData.phoneHref}>
         {siteData.phone}
       </a>
+
+      <button
+        type="button"
+        className="mobile-menu-button"
+        onClick={() => setMenuOpen((current) => !current)}
+        aria-label="Toggle navigation menu"
+        aria-expanded={menuOpen}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
     </header>
   );
 }

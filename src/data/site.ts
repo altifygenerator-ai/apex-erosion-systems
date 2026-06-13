@@ -183,76 +183,102 @@ export const siteData: SiteData = {
     },
   ],
 
-  gallery: [
+    gallery: [
     {
-      src: "/images/apex/gallery-1.jpg",
-      alt: "Hydroseeding and soil stabilization around a commercial building site",
+      src: "/images/apex/gallery-27.jpg",
+      alt: "Commercial hydroseeding and site stabilization across a large open property",
       label: "Commercial Hydroseeding",
     },
     {
+      src: "/images/apex/gallery-38.jpg",
+      alt: "Residential hydroseeding across a freshly covered yard near trees and open ground",
+      label: "Residential Hydroseeding",
+    },
+    {
       src: "/images/apex/gallery-2.jpg",
-      alt: "Fresh soil preparation around a new construction property",
-      label: "Site Prep",
+      alt: "Freshly prepared soil rows around a residential construction property",
+      label: "Grading and Prep",
+    },
+    {
+      src: "/images/apex/gallery-33.jpg",
+      alt: "Hydroseeding applied along a sloped drainage area beside open ground",
+      label: "Slope Stabilization",
+    },
+    {
+      src: "/images/apex/gallery-31.jpg",
+      alt: "Finish grading and soil preparation around a new construction building",
+      label: "Finish Grading",
+    },
+    {
+      src: "/images/apex/gallery-12.jpg",
+      alt: "Equipment working across a prepared site for finish grade and soil preparation",
+      label: "Finish Grade",
+    },
+    {
+      src: "/images/apex/gallery-32.jpg",
+      alt: "Commercial hydroseeding application with equipment and water truck on site",
+      label: "Commercial Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-10.jpg",
+      alt: "Hydroseeding applied through a wooded drainage area for slope and erosion stabilization",
+      label: "Slope Stabilization",
+    },
+
+    {
+      src: "/images/apex/gallery-1.jpg",
+      alt: "Residential hydroseeding near a driveway and new home site",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-3.jpg",
       alt: "Drainage and erosion control work beside a new construction home",
-      label: "Drainage & Erosion Control",
+      label: "Drainage and Erosion Control",
     },
     {
       src: "/images/apex/gallery-4.jpg",
-      alt: "Dust control and soil stabilization work near a residential construction site",
-      label: "Soil Stabilization",
+      alt: "Fresh soil preparation and finish grading around a new construction property",
+      label: "Finish Grading",
     },
     {
       src: "/images/apex/gallery-5.jpg",
       alt: "Finished hydroseeding around a newly built home",
-      label: "New Build Lawn Finish",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-6.jpg",
       alt: "Hydroseeding and lawn establishment around a pool and patio project",
-      label: "Pool Area Hydroseeding",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-7.jpg",
-      alt: "Prepared dirt road and construction site access area",
-      label: "Site Access Prep",
+      alt: "Prepared dirt access road and construction site area",
+      label: "Grading and Prep",
     },
     {
       src: "/images/apex/gallery-8.jpg",
       alt: "Prepared soil rows and erosion control work on a larger open property",
-      label: "Large Site Prep",
+      label: "Grading and Prep",
     },
     {
       src: "/images/apex/gallery-9.jpg",
-      alt: "Drainage path and bare soil preparation beside a structure",
-      label: "Drainage Path Prep",
-    },
-    {
-      src: "/images/apex/gallery-10.jpg",
-      alt: "Bright hydroseed application in a drainage ditch and erosion control area",
-      label: "Ditch Stabilization",
+      alt: "Prepared drainage path and bare soil area beside a structure",
+      label: "Drainage Prep",
     },
     {
       src: "/images/apex/gallery-11.jpg",
       alt: "Hydroseeded open lot with soil stabilization across a wide property",
-      label: "Open Lot Hydroseeding",
-    },
-    {
-      src: "/images/apex/gallery-12.jpg",
-      alt: "Equipment shaping soil for drainage and site preparation",
-      label: "Equipment Site Prep",
+      label: "Commercial Hydroseeding",
     },
     {
       src: "/images/apex/gallery-13.jpg",
       alt: "Hydroseeding application along a prepared property edge",
-      label: "Edge Stabilization",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-14.jpg",
       alt: "Finished lawn and sidewalk area after seeding or sod establishment",
-      label: "Finished Lawn Area",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-15.jpg",
@@ -262,17 +288,17 @@ export const siteData: SiteData = {
     {
       src: "/images/apex/gallery-16.jpg",
       alt: "Hydroseeding application in a wooded drainage and erosion control area",
-      label: "Wooded Drainage Control",
+      label: "Slope Stabilization",
     },
     {
       src: "/images/apex/gallery-17.jpg",
       alt: "Hydroseeding across a large open field with a treeline in the background",
-      label: "Field Hydroseeding",
+      label: "Commercial Hydroseeding",
     },
     {
       src: "/images/apex/gallery-18.jpg",
       alt: "Hydroseeded open ground and bare soil stabilization near a lake or pond edge",
-      label: "Open Ground Stabilization",
+      label: "Commercial Hydroseeding",
     },
     {
       src: "/images/apex/gallery-19.jpg",
@@ -282,60 +308,79 @@ export const siteData: SiteData = {
     {
       src: "/images/apex/gallery-20.jpg",
       alt: "New construction property with finished soil preparation and erosion control work",
-      label: "Construction Site Finish",
+      label: "Finish Grading",
     },
     {
       src: "/images/apex/gallery-21.jpg",
       alt: "Fresh dirt work and soil preparation around a new construction building",
-      label: "Fresh Dirt Work",
+      label: "Finish Grading",
     },
     {
       src: "/images/apex/gallery-22.jpg",
       alt: "Prepared open lot around a building site before final stabilization",
-      label: "Open Lot Prep",
+      label: "Grading and Prep",
     },
     {
       src: "/images/apex/gallery-23.jpg",
       alt: "Hydroseeding and erosion control work along a roadside or driveway edge",
-      label: "Roadside Stabilization",
+      label: "Slope Stabilization",
     },
     {
       src: "/images/apex/gallery-24.jpg",
       alt: "Hydroseeding equipment applying seed mixture across a large property",
-      label: "Hydroseeding Application",
+      label: "Commercial Hydroseeding",
     },
     {
       src: "/images/apex/gallery-25.jpg",
       alt: "Drainage channels and hydroseeding work across a large open site",
-      label: "Drainage Channel Work",
+      label: "Slope Stabilization",
     },
     {
       src: "/images/apex/gallery-26.jpg",
       alt: "Fresh red dirt and soil preparation before hydroseeding",
-      label: "Red Dirt Site Prep",
-    },
-    {
-      src: "/images/apex/gallery-27.jpg",
-      alt: "Hydroseeded open property with exposed soil and stabilization work",
-      label: "Property Stabilization",
+      label: "Grading and Prep",
     },
     {
       src: "/images/apex/gallery-28.jpg",
       alt: "Hydroseeding and soil stabilization around a cabin or new build",
-      label: "Cabin Site Finish",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-29.jpg",
-      alt: "Hydroseeded lawn area around a light-colored residential building",
-      label: "Residential Site Finish",
+      alt: "Residential hydroseeding around a light colored home with fresh green coverage across the yard",
+      label: "Residential Hydroseeding",
     },
     {
       src: "/images/apex/gallery-30.jpg",
       alt: "Hydroseeding and erosion control work across a wooded property edge",
-      label: "Woodline Stabilization",
+      label: "Residential Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-34.jpg",
+      alt: "Prepared soil rows and finish prep around a new residential construction property",
+      label: "Grading and Prep",
+    },
+    {
+      src: "/images/apex/gallery-35.jpg",
+      alt: "Equipment view of prepared soil rows around a new construction property",
+      label: "Finish Grade",
+    },
+    {
+      src: "/images/apex/gallery-36.jpg",
+      alt: "Prepared open ground along a wooded property edge before final stabilization",
+      label: "Grading and Prep",
+    },
+    {
+      src: "/images/apex/gallery-39.jpg",
+      alt: "Residential hydroseeding near a driveway and new home site",
+      label: "Residential Hydroseeding",
+    },
+    {
+      src: "/images/apex/gallery-40.jpg",
+      alt: "Residential hydroseeding beside a driveway and home site",
+      label: "Residential Hydroseeding",
     },
   ],
-
   process: [
     {
       step: "01",

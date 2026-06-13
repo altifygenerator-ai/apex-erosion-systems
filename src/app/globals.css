@@ -199,6 +199,8 @@ p {
 
 /* Header */
 
+/* Header */
+
 .site-header {
   position: fixed;
   top: 16px;
@@ -210,6 +212,7 @@ p {
   gap: 22px;
   width: min(var(--max), calc(100% - 28px));
   padding: 12px;
+  overflow: visible;
   border: 1px solid rgba(245, 241, 232, 0.14);
   border-radius: 999px;
   background:
@@ -241,6 +244,8 @@ p {
 .brand-logo img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  padding: 4px;
 }
 
 .brand-copy {
@@ -293,6 +298,25 @@ p {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
 }
 
+.mobile-menu-button {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(245, 241, 232, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  place-items: center;
+  gap: 4px;
+}
+
+.mobile-menu-button span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text);
+}
 /* Hero */
 
 .hero-section {
@@ -1514,30 +1538,55 @@ p {
     padding: 76px 0;
   }
 
+  @media (max-width: 1120px) {
   .site-header {
-    top: 10px;
-    width: calc(100% - 20px);
-    gap: 10px;
+    grid-template-columns: 1fr auto auto;
+    border-radius: 28px;
   }
 
-  .brand-logo {
-    width: 48px;
-    height: 48px;
+  .mobile-menu-button {
+    display: grid;
   }
 
-  .brand-name {
-    max-width: 160px;
-    font-size: 0.88rem;
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    display: grid;
+    gap: 6px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 12px;
+    border: 1px solid rgba(245, 241, 232, 0);
+    border-radius: 24px;
+    background:
+      linear-gradient(180deg, rgba(17, 20, 15, 0.96), rgba(8, 10, 8, 0.94));
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(18px);
+    transition:
+      max-height 220ms ease,
+      opacity 180ms ease,
+      padding 180ms ease,
+      border-color 180ms ease;
   }
 
-  .brand-tagline {
-    display: none;
+  .main-nav.mobile-open {
+    max-height: 360px;
+    padding: 12px;
+    border-color: rgba(245, 241, 232, 0.14);
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  .header-phone {
-    padding: 12px 13px;
-    font-size: 0.82rem;
+  .main-nav a {
+    padding: 13px 14px;
+    border: 1px solid rgba(245, 241, 232, 0.08);
+    background: rgba(255, 255, 255, 0.045);
   }
+}
 
   .hero-section {
     min-height: auto;

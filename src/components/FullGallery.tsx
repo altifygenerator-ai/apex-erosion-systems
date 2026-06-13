@@ -42,22 +42,26 @@ export default function FullGallery() {
       <div className="section-shell">
         <Reveal className="section-heading full-gallery-heading">
           <p className="eyebrow">Project gallery</p>
-          <h1>Drainage, grading, erosion control, and hydroseeding work.</h1>
+          <h1>Hydroseeding, erosion control, drainage, and site stabilization work.</h1>
           <p>
-            Browse project photos from Apex Erosion Systems, including site prep,
-            soil stabilization, drainage work, hydroseeding, grading, and finished
-            ground conditions.
+            A look at Apex Erosion Systems project photos, including commercial
+            sites, new construction finish work, drainage support, hydroseeding,
+            erosion control, and soil stabilization.
           </p>
         </Reveal>
 
         <div className="full-gallery-grid">
           {siteData.gallery.map((image, index) => (
-            <Reveal key={image.src} className="full-gallery-item" delay={(index % 8) * 0.025}>
+            <Reveal
+              key={`${image.src}-${index}`}
+              className="full-gallery-item"
+              delay={(index % 8) * 0.025}
+            >
               <button
                 type="button"
                 className="gallery-button"
                 onClick={() => openGallery(index)}
-                aria-label={`Open ${image.label}`}
+                aria-label={`Open project photo ${index + 1}`}
               >
                 <Image
                   src={image.src}
@@ -65,7 +69,6 @@ export default function FullGallery() {
                   fill
                   sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
                 />
-                <div className="gallery-label small">{image.label}</div>
               </button>
             </Reveal>
           ))}
@@ -100,12 +103,7 @@ export default function FullGallery() {
               />
             </div>
 
-            <div className="gallery-lightbox-footer">
-              <div>
-                <p className="gallery-lightbox-kicker">Project photo</p>
-                <h3>{selectedImage.label}</h3>
-              </div>
-
+            <div className="gallery-lightbox-footer gallery-lightbox-footer-simple">
               <div className="gallery-lightbox-actions">
                 <button type="button" onClick={showPrevious}>
                   Previous
