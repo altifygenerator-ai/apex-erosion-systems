@@ -4,8 +4,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const siteUrl = "https://apex-erosion-systems.vercel.app";
-
+const siteUrl = "https://apexerosionsystems.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
