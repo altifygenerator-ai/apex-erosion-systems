@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const siteUrl = "https://apexerosionsystems.com";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
@@ -44,6 +45,10 @@ export const metadata: Metadata = {
   publisher: "Apex Erosion Systems",
   category: "construction",
 
+  verification: {
+    google: "z5Gl_1EmC7bK7l3ocouB40uq6zIj-6OrcSqgvYB0nj0",
+  },
+
   alternates: {
     canonical: siteUrl,
   },
@@ -57,10 +62,12 @@ export const metadata: Metadata = {
     siteName: "Apex Erosion Systems",
     images: [
       {
-        url: "/og-image.jpg",
+        url: `${siteUrl}/og-image.jpg`,
+        secureUrl: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Apex Erosion Systems drainage, grading, erosion control, and hydroseeding",
+        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -73,7 +80,7 @@ export const metadata: Metadata = {
       "Apex Erosion Systems | Drainage, Grading, Erosion Control & Hydroseeding",
     description:
       "Drainage, grading, erosion control, soil prep, hydroseeding, seeding, sod work, and new construction site finish work.",
-    images: ["/og-image.jpg"],
+    images: [`${siteUrl}/og-image.jpg`],
   },
 
   robots: {
