@@ -3,20 +3,19 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-
-const siteUrl = "https://apexerosionsystems.com";
+import { defaultOgImage, localSeoKeywords, siteName, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
     default:
-      "Apex Erosion Systems | Drainage, Grading, Erosion Control & Hydroseeding",
-    template: "%s | Apex Erosion Systems",
+      "Apex Erosion Systems | Texarkana Hydroseeding, Drainage & Erosion Control",
+    template: `%s | ${siteName}`,
   },
 
   description:
-    "Apex Erosion Systems provides commercial and residential drainage, grading, erosion control, soil prep, hydroseeding, seeding, sod work, washout repair, and new construction site finish work.",
+    "Apex Erosion Systems provides hydroseeding, erosion control, drainage support, site stabilization, soil prep, seeding, sod work, washout repair, and construction site finish work around Texarkana and Northeast Texas.",
 
   keywords: [
     "Apex Erosion Systems",
@@ -37,12 +36,13 @@ export const metadata: Metadata = {
     "foundation drainage",
     "bare soil stabilization",
     "contractor site work",
+    ...localSeoKeywords,
   ],
 
-  applicationName: "Apex Erosion Systems",
-  authors: [{ name: "Apex Erosion Systems" }],
-  creator: "Apex Erosion Systems",
-  publisher: "Apex Erosion Systems",
+  applicationName: siteName,
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
   category: "construction",
 
   verification: {
@@ -50,20 +50,20 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: siteUrl,
+    canonical: "/",
   },
 
   openGraph: {
     title:
-      "Apex Erosion Systems | Drainage, Grading, Erosion Control & Hydroseeding",
+      "Apex Erosion Systems | Texarkana Hydroseeding, Drainage & Erosion Control",
     description:
-      "Commercial and residential drainage, grading, erosion control, soil prep, hydroseeding, seeding, sod work, washout repair, and new construction site finish work.",
+      "Hydroseeding, drainage support, erosion control, grading, soil stabilization, seeding, sod work, and construction site finish work around Texarkana and Northeast Texas.",
     url: siteUrl,
-    siteName: "Apex Erosion Systems",
+    siteName,
     images: [
       {
-        url: `${siteUrl}/og-image.jpg`,
-        secureUrl: `${siteUrl}/og-image.jpg`,
+        url: defaultOgImage,
+        secureUrl: defaultOgImage,
         width: 1200,
         height: 630,
         alt: "Apex Erosion Systems drainage, grading, erosion control, and hydroseeding",
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Apex Erosion Systems | Drainage, Grading, Erosion Control & Hydroseeding",
+      "Apex Erosion Systems | Texarkana Hydroseeding, Drainage & Erosion Control",
     description:
-      "Drainage, grading, erosion control, soil prep, hydroseeding, seeding, sod work, and new construction site finish work.",
-    images: [`${siteUrl}/og-image.jpg`],
+      "Hydroseeding, erosion control, drainage support, site stabilization, seeding, sod work, and construction site finish work around Texarkana and Northeast Texas.",
+    images: [defaultOgImage],
   },
 
   robots: {

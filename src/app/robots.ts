@@ -1,8 +1,7 @@
 // src/app/robots.ts
 
 import type { MetadataRoute } from "next";
-
-const siteUrl = "https://apexerosionsystems.com";
+import { siteUrl } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {
