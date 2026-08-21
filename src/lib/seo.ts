@@ -6,20 +6,6 @@ export const defaultOgImage = `${siteUrl}/og-image.jpg`;
 export const primarySchemaImage = `${siteUrl}/images/apex/gallery-17.jpg`;
 export const logoUrl = `${siteUrl}${siteData.logo}`;
 
-export const localSeoKeywords = [
-  "Texarkana TX hydroseeding",
-  "Texarkana erosion control",
-  "Texarkana drainage solutions",
-  "Texarkana site grading",
-  "New Boston TX hydroseeding",
-  "East Texas hydroseeding",
-  "East Texas erosion control",
-  "Northeast Texas drainage contractor",
-  "Northeast Texas site stabilization",
-  "commercial hydroseeding Texarkana",
-  "residential hydroseeding Texarkana",
-  "construction site stabilization Texarkana",
-];
 
 const businessId = `${siteUrl}/#business`;
 const websiteId = `${siteUrl}/#website`;
@@ -85,7 +71,7 @@ const businessSchema = {
   image: primarySchemaImage,
   logo: logoUrl,
   description:
-    "Apex Erosion Systems provides commercial and residential hydroseeding, erosion control, drainage support, site stabilization, soil prep, seeding, sod work, washout repair, and construction site finish work in the Texarkana and Northeast Texas region.",
+    "Apex Erosion Systems provides hydroseeding, erosion control, drainage support, grading, and site stabilization for commercial and residential projects around Texarkana and Northeast Texas.",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
@@ -211,9 +197,9 @@ export const homePageSchema = {
       "@type": "WebPage",
       "@id": homePageId,
       url: siteUrl,
-      name: "Apex Erosion Systems | Texarkana Hydroseeding, Drainage & Erosion Control",
+      name: "Texarkana Hydroseeding & Erosion Control | Apex Erosion Systems",
       description:
-        "Apex Erosion Systems provides hydroseeding, erosion control, drainage support, site stabilization, soil prep, seeding, sod work, and construction site finish work for commercial and residential projects around Texarkana and Northeast Texas.",
+        "Apex Erosion Systems provides hydroseeding, erosion control, drainage support, grading, and site stabilization for projects around Texarkana and Northeast Texas.",
       isPartOf: {
         "@id": websiteId,
       },
@@ -243,9 +229,9 @@ export const galleryPageSchema = {
       "@type": "WebPage",
       "@id": galleryPageId,
       url: `${siteUrl}/gallery`,
-      name: "Apex Erosion Systems Project Gallery | Hydroseeding & Erosion Control",
+      name: "Hydroseeding & Erosion Control Gallery | Apex Erosion Systems",
       description:
-        "View Apex Erosion Systems project photos showing hydroseeding, erosion control, drainage support, site prep, grading, and soil stabilization work in the Texarkana and Northeast Texas region.",
+        "See Apex Erosion Systems project photos for hydroseeding, erosion control, grading, drainage, and site stabilization around Texarkana and Northeast Texas.",
       isPartOf: {
         "@id": websiteId,
       },

@@ -8,17 +8,17 @@ import Footer from "@/components/Footer";
 import { defaultOgImage, galleryPageSchema, siteName, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Project Gallery | Hydroseeding, Drainage & Erosion Control Photos",
+  title: "Hydroseeding & Erosion Control Gallery",
   description:
-    "View Apex Erosion Systems project photos showing hydroseeding, erosion control, drainage support, site prep, grading, and soil stabilization work around Texarkana and Northeast Texas.",
+    "See Apex Erosion Systems project photos for hydroseeding, erosion control, grading, drainage, and site stabilization around Texarkana and Northeast Texas.",
   alternates: {
     canonical: "/gallery",
   },
   openGraph: {
     title:
-      "Apex Erosion Systems Project Gallery | Hydroseeding & Erosion Control",
+      "Hydroseeding & Erosion Control Gallery | Apex Erosion Systems",
     description:
-      "Project photos showing hydroseeding, erosion control, drainage support, site prep, grading, and soil stabilization work around Texarkana and Northeast Texas.",
+      "Project photos showing hydroseeding, erosion control, grading, drainage, and site stabilization work around Texarkana and Northeast Texas.",
     url: `${siteUrl}/gallery`,
     siteName,
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Apex Erosion Systems Project Gallery | Hydroseeding & Erosion Control",
+      "Hydroseeding & Erosion Control Gallery | Apex Erosion Systems",
     description:
-      "View hydroseeding, erosion control, drainage support, grading, and site stabilization project photos.",
+      "See hydroseeding, erosion control, drainage, grading, and site stabilization project photos from Apex Erosion Systems.",
     images: [defaultOgImage],
   },
 };
